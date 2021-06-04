@@ -1,0 +1,239 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.App-header {
+  background-color:#2196F3;
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.Messages-list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.Messages-list > ul {
+  padding-left: 0px;
+}
+
+.Messages-message {
+  display: flex;
+  margin-top: 10px;
+}
+
+.Messages-message.currentMember {
+  /*justify-content: flex-end;*/
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.Message-content {
+  display: inline-block;
+  width: 70%;
+}
+
+.currentMember > .Message-content {
+  align-items: flex-end;
+}
+
+.Messages-message > .avatar {
+  /* height: 35px;
+  width: 35px;
+  border-radius: 50%; */
+  display: inline-block;
+  margin: 0 10px -10px;
+}
+
+.logo {
+  /* background-image: url("https://i.imgur.com/oBebi79.jpg"); */
+  background-position: center; 
+  background-size: cover;
+}
+
+.Message-content > .username {
+  display: block;
+  color: gray;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.Message-content > .text-me {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px 0px 12px 12px;
+  background-color: green;
+  color: white;
+  display: inline-block;
+  box-shadow: 1px 1px lightgrey
+}
+
+.Message-content > .text-bot {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 0px 12px 12px 12px;
+  background-color: green;
+  color: white;
+  display: inline-block;
+  box-shadow: 0px 1px lightgrey;
+  white-space: pre-line;
+}
+
+.currentMember > .Message-content .text {
+  background-color: orangered;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+input {
+  margin: 5px 0 5px 5px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  flex-grow: 1;
+  box-shadow: 2px 2px lightgrey
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  margin: 5px 5px 5px 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: peru;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 6px;
+  cursor: pointer;
+  display: inline-block;
+  /* box-shadow: 2px 2px lightgrey */
+}
+
+.suggestion_chips {
+  display: inline-block;
+}
+
+input[type="button"] {
+  margin: 10px 0px 5px 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  /* box-shadow: 2px 2px lightgrey; */
+}
+
+h1 {
+  margin: 5px;
+}
+
+.video {
+  margin: 25px 60px;
+}
+
+.image {
+  margin: 25px 60px;
+}
+
+.text{
+  white-space: pre-line;
+}
+
+@media screen and (max-width: 600px) {
+  .botui-carousel {
+    width: 90%!important;  
+    display: inline-block;
+  }
+
+  .autoComplete {
+    color: gray;
+    background: white;
+    list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 80px;
+    bottom: 0;
+    left: 1%;
+    right: 25%;
+    margin-left: 10px;
+    border: solid 5px white;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .botui-carousel {
+    width: 65%!important;  
+    display: inline-block;
+  }
+  .autoComplete {
+    color: gray;
+    background: white;
+    list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 80px;
+    bottom: 0;
+    left: 15%;
+    right: 20%;
+    margin-left: 10px;
+    border: solid 5px white;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+.iframe {
+  text-align: center;
+}
+
+.typing {
+  margin: 10px;
+  margin-left: 50px;
+}
+
+.typingIndicator {
+  width: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.list-buttons{
+  margin-left: 41px;
+  list-style-type: none;
+}
